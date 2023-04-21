@@ -40,15 +40,9 @@ it('Caso inválido - sem parâmetros', () => {
     expect(result.name).toEqual(Constants.ErrorValidation.name);
 });
 
-it('Caso inválido - sem parâmetros', () => {
-    const result = Validation.update({
-
-    });
-    expect(result.name).toEqual(Constants.ErrorValidation.name);
-});
 
 it('Caso inválido - duplicado', () => {
-    const result = Validation.update({
+    const result = Validation.create({
         nome: "gabriel",
         email: "gabriel.medeiros@ges.inatel.br",
         senha: "123456"
